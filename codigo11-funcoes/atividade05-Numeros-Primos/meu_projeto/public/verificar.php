@@ -1,0 +1,25 @@
+<?php
+function verificar(int $number) {
+    if ($number < 2) {
+        return false;
+    }
+
+    if ($number == 2) {;
+        echo "$number<br>";
+        return true;
+    }
+
+    if ($number % 2 == 0) {
+        return false;
+    }
+
+    for ($i = 3; $i * $i <= $number; $i += 2) {
+        if ($number % $i == 0) {
+
+            return false;
+        }
+    }
+    echo "$number<br>";
+    return true;
+}
+?>
