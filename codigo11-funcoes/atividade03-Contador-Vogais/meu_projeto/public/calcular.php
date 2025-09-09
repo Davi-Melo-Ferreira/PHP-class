@@ -15,10 +15,11 @@ function calcular ($word){
             $u += 1;
         }
     }
-    echo "Vogal A: $a<br>";
-    echo "Vogal E: $e<br>";
-    echo "Vogal I: $i<br>";
-    echo "Vogal O: $o<br>";
-    echo "Vogal U: $u<br>";
+    $vogais = ['A' => $a, 'E' => $e, 'I' => $i, 'O' => $o, 'U' => $u];
+    foreach ($vogais as $vogal => $valor) {
+        if ($valor > 0) {
+            echo "Vogal $vogal: $valor<br>";
+        }
+    }
 }
 ?>

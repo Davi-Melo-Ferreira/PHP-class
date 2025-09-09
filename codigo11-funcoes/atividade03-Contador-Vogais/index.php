@@ -11,7 +11,7 @@
 <body>
     <!--Cabeçalho do Site-->
     <header>
-        <h1>Tabuada</h1>
+        <h1>Contador de Vogais</h1>
     </header>
 
     <!--Container para o conteúdo-->

@@ -5,7 +5,6 @@ function verificar(int $number) {
     }
 
     if ($number == 2) {;
-        echo "$number<br>";
         return true;
     }
 

@@ -18,7 +18,14 @@ function mediar ($estudante){
     if ($qntd_notas > 0) { //evita divisão por zero
         $media = $soma_notas / $qntd_notas;
         echo "<br><strong>Soma das Notas: </strong> $soma_notas<br>";
-        echo "<strong>Média:</strong>" . number_format($media, 2, ',', '.');
+        echo "<strong>Média:</strong>" . number_format($media, 2, ',', '.' . "<br>");
+    }
+    if ($media < 4){
+        echo"<strong>NA</strong>- Aluno Reprovado<br>";
+    } else if($media < 6){
+        echo"<strong>PA</strong>- Aluno Parcialmente Aprovado<br>";
+    } else{
+        echo"<strong>A</strong>- Aluno Aprovado<br>";
     }
 }
 ?>
