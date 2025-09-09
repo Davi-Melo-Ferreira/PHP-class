@@ -36,7 +36,7 @@
         session_start();
                 if (isset($_POST['word']) && !empty($_POST['word'])) {
                     $word = $_POST['word'];
-                    echo "<h1>Quantidade de Cada Vogal:</h1><br>";
+                    echo "<h1>Quantidade de Vogais:</h1><br>";
                     echo calcular($word);
                 }
     ?>

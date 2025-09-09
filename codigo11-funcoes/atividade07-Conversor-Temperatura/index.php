@@ -11,7 +11,7 @@
 <body>
     <!--Cabeçalho do Site-->
     <header>
-        <h1>Tabuada</h1>
+        <h1>Convertor</h1>
     </header>
 
     <!--Container para o conteúdo-->
@@ -28,15 +28,26 @@
             <input type="submit" name="converter" value="Converter">
             <?php
                 session_start();
-                if(isset($_POST['converter'])){
-                    echo"<input type='text' value='$valor' disabled>";
+                if(isset($_POST['number']) && isset($_POST['convertedor'])){
+                    $_SESSION['number'] = $_POST['number'];
+                    $_SESSION['convertedor'] = $_POST['convertedor'];
+                    switch($_SESSION['convertedor']){
+                        case 'Celsius':
+                            require 'meu_projeto/public/celsius.php';
+                            calcularCelsius();
+                            break;
+                        case 'Farenheit':
+                            require 'meu_projeto/public/farenheit.php';
+                            calcularFarenheit();
+                            break;
+                        case 'Kelvin':
+                            require 'meu_projeto/public/kelvin.php';
+                            calcularKelvin();
+                            break;
+                    }
+                    // echo"<input type='text' value='resultado' disabled>";
                 }
             ?>
-            <select name="convertido">
-                <option value="Celsius">Celsius</option>
-                <option value="Farenheit">Farenheit</option>
-                <option value="Kelvin">Kelvin</option>
-            </select>
         </form>
     </main>
 

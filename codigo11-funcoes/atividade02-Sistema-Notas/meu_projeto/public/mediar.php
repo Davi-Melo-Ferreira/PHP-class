@@ -21,11 +21,11 @@ function mediar ($estudante){
         echo "<strong>Média:</strong>" . number_format($media, 2, ',', '.' . "<br>");
     }
     if ($media < 4){
-        echo"<strong>NA</strong>- Aluno Reprovado<br>";
+        echo"<br><strong>NA</strong>- Aluno Reprovado<br>";
     } else if($media < 6){
-        echo"<strong>PA</strong>- Aluno Parcialmente Aprovado<br>";
+        echo"<br><strong>PA</strong>- Aluno Parcialmente Aprovado<br>";
     } else{
-        echo"<strong>A</strong>- Aluno Aprovado<br>";
+        echo"<br><strong>A</strong>- Aluno Aprovado<br>";
     }
 }
 ?>

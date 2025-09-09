@@ -11,7 +11,7 @@
 <body>
     <!--Cabeçalho do Site-->
     <header>
-        <h1>Tabuada</h1>
+        <h1>Simulador de Caixa Eletrônico</h1>
     </header>
 
     <!--Container para o conteúdo-->
@@ -19,7 +19,8 @@
         <form method="POST">
             <label>Digite um Número:</label><br>
             <input type="number" name="number" required>
-            <input type="submit" name="button">
+            <input type="submit" name="enviar" value="Enviar">
+            <input type="submit" name="encerrar" value="Encerrar">
         </form>
     </main>
 
