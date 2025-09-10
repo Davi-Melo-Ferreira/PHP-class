@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    text-align: center;
+    font-weight: bold;
+}
+
+input[type="number"],
+input[type="submit"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+h2 {
+    text-align: center;
+    color: black;
+}
+
+p {
+    font-weight: bold;
+    text-align: center;
+}

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="meu_projeto/public/css/style.css">
 </head>
 
 <body>
@@ -19,20 +19,20 @@
         <form method="POST">
             <?php
                 session_start();
-                if (isset($_POST['number']) && !empty($_POST['number'])) {
+                if (isset($_POST['number']) && !empty($_POST['number']) && isset($_POST['button'])) {
                     $number = (int) $_POST['number'];
-                    $numeroSorteado = rand(1, 100);
+                    $numeroSorteado = rand(1, 10);
                     if (!isset($_SESSION['tentativas'])) {
                         $_SESSION['tentativas'] = 0;
                     }
                     if ($number == $numeroSorteado){
                         echo "<h1>Acertou</h1><br>";
-                        echo"" . htmlspecialchars($_SESSION['tentativas']) ." Tentativas</strong><br>";
+                        echo"<p>" . htmlspecialchars($_SESSION['tentativas']) ." Tentativas</strong></p><br>";
                         session_destroy();
                     } else{
                         $_SESSION['tentativas']++;
                         echo"<h1>Errou</h1><br>";
-                        echo"" . htmlspecialchars($_SESSION['tentativas']) ." Tentativas</strong><br>";
+                        echo"<p>" . htmlspecialchars($_SESSION['tentativas']) ." Tentativas</strong></p><br>";
                     }
                 }
             ?>

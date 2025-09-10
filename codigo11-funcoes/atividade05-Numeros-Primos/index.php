@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="meu_projeto/public/css/style.css">
 </head>
 
 <body>
@@ -33,9 +33,21 @@
 
     <?php
     session_start();
+    include "meu_projeto/public/verificar.php";
     if (isset($_POST['button'])){
-        header("Location: meu_projeto/public/resultado.php");
-        exit;
+        if (isset($_POST['number']) && !empty($_POST['number'])) {
+            $number = (float) $_POST['number'];
+            $verificacao = verificar($number);
+            
+            if ($verificacao == 1){
+                echo "<h1>Números Primos Antecessores de $number:</h1>";
+                for ($i = 0; $i < $number + 1; $i++) {
+                    $iteracao = verificar($i);
+                }
+            } else{
+                echo "<p>O Número Não é Primo</p>";
+            }  
+        }
     }
     ?>
 </body>

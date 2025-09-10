@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="meu_projeto/public/css/style.css">
 </head>
 
 <body>
@@ -20,7 +20,6 @@
             <label>Digite um Número:</label><br>
             <input type="number" name="number" required>
             <input type="submit" name="enviar" value="Enviar">
-            <input type="submit" name="encerrar" value="Encerrar">
         </form>
     </main>
 
@@ -33,12 +32,12 @@
     <script src="js/script.js"></script>
 
     <?php
-        include "meu_projeto/public/tabuar.php";
+        include "meu_projeto/public/calcular.php";
         session_start();
                 if (isset($_POST['number']) && !empty($_POST['number'])) {
                     $number = (float) $_POST['number'];
                     echo "<h1>Resultado:</h1>";
-                    echo tabuar($number);
+                    echo calcular($number);
                 }
     ?>
 </body>
