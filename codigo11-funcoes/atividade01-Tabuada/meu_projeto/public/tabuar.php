@@ -1,8 +1,8 @@
 <?php
 function tabuar ($number){
-    for ($i = 0; $i < 10; $i++){
+    for ($i = 1; $i < 11; $i++){
         $resultado = $number * $i;
-        echo "$number x $i = $resultado<br>";
+        echo "<p>$number x $i = $resultado</p>";
     }
 }
 ?>

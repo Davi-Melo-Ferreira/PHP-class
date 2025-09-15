@@ -18,7 +18,7 @@ function verificar(int $number) {
             return false;
         }
     }
-    echo "$number<br>";
+    echo "<p>$number</p><br>";
     return true;
 }
 ?>

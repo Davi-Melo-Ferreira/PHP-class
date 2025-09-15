@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="meu_projeto/public/css/style.css">
 </head>
 
 <body>
@@ -36,7 +36,7 @@
         session_start();
                 if (isset($_POST['number']) && !empty($_POST['number'])) {
                     $number = (float) $_POST['number'];
-                    echo "<h1>Resultado:</h1>";
+                    echo "<h2>Resultado:</h2>";
                     echo tabuar($number);
                 }
     ?>

@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+}
+
+header {
+    background: #9C27B0;
+    padding: 10px;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+}
+
+main {
+    margin: 20px auto;
+    max-width: 400px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ccc;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="submit"] {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: #888;
+}
+
+h1 {
+    color: #9C27B0;
+}

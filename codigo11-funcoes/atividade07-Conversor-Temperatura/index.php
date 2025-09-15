@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="meu_projeto/public/css/style.css">
 </head>
 
 <body>
     <!--Cabeçalho do Site-->
     <header>
-        <h1>Convertor</h1>
+        <h1>Conversor de Grau</h1>
     </header>
 
     <!--Container para o conteúdo-->
@@ -45,7 +45,6 @@
                             calcularKelvin();
                             break;
                     }
-                    // echo"<input type='text' value='resultado' disabled>";
                 }
             ?>
         </form>
@@ -58,11 +57,6 @@
 
     <!--Javascript-->
     <script src="js/script.js"></script>
-
-    <?php
-        
-                
-    ?>
 </body>
 
 </html>
