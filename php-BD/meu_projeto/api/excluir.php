@@ -6,7 +6,7 @@ $dados = json_decode(file_get_contents("php://input"), true);
 
 $id = (int)$dados["id"];
 
-$sql = "SELECT * FROM tarefas WHERE id = $id";
+$sql = "DELETE FROM tarefas WHERE id = $id";
 
 $conn->query($sql);
 

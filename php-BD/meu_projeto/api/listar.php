@@ -2,7 +2,7 @@
 header("Content-Type: application/json");
 include("../conexao/conexao.php");
 
-$sql = "SEÇECT * FROM tarefas ORDER BY id DESC";
+$sql = "SELECT * FROM tarefas ORDER BY id DESC";
 
 $result = $conn->query($sql);
 
